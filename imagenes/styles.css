@@ -95,7 +95,25 @@ outline: none;
 
 .aviso-copiado{
   position: fixed;
-  right: 800px;
+  right: 820px;
   bottom: 500px; 
 }
 
+.text-one{
+  position: relative;
+  top: 350px;
+  left: 110px;
+  width: 336px;
+  height: 60px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.text-two{
+  position: relative;
+  width: 336px;
+  height: 60px;
+  top: 390px;
+  right: 220px;
+  font-size: 15px;
+}

@@ -10,6 +10,8 @@ La letra "u" es convertida para "ufat"
 function encriptar() {
   let mensaje = document.querySelector(".text-area").value;
   let resultado = document.querySelector(".mensaje");
+  let textOne = document.querySelector(".text-one");
+  let textTwo = document.querySelector(".text-two");
 
   let cifrado = mensaje
     .replace(/e/gi, "enter")
@@ -19,6 +21,8 @@ function encriptar() {
     .replace(/u/gi, "ufat");
 
   resultado.style.backgroundImage = "none";
+  textOne.textContent = "";
+  textTwo.textContent = "";
   resultado.textContent = cifrado;
 }
 
@@ -62,19 +66,10 @@ function aviso() {
 
 function copiar() {
   let resultado = document.querySelector(".mensaje");
-  resultado.select();
+  //resultado.select();
   document.execCommand("copy");
 
   aviso();
 }
 
-/*
-.aviso-copiado{
-  width: 120px;
-  height: 40px;
-  border: 1px solid #0A3871;
-  font-size: 25px;
-  text-align: center;
-  padding: 2px;
-}
-*/
+
